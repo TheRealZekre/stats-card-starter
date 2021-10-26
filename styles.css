@@ -1,18 +1,19 @@
+/* google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');/* inter */
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');/* lexend deca */
+
+
+
 :root {
-    /* ---------- primary colors ---------- */
-    --very-dark-blue: hsl(233, 47%, 7%);
-    /* (main background) */
-    --dark-desaturated-blue: hsl(244, 38%, 16%);
-    /* (card background) */
-    --soft-violet: hsl(277, 64%, 61%);
-    /* (accent) */
-    /* ---------- neutral colors ---------- */
-    --neutral-White: hsl(0, 0%, 100%);
-    /* (main heading, stats) */
-    --slightly-transparent-white-main: hsla(0, 0%, 100%, 0.75);
-    /* (main paragraph) */
-    --slightly-transparent-white-stats: hsla(0, 0%, 100%, 0.6);
-    /* (stat headings) */
+    /* primary colors */
+    --very-dark-blue: hsl(233, 47%, 7%); /* (main background) */    
+    --dark-desaturated-blue: hsl(244, 38%, 16%); /* (card background) */    
+    --soft-violet: hsl(277, 64%, 61%); /* (accent) */
+    
+    /* neutral colors */
+    --neutral-white: hsl(0, 0%, 100%); /* (main heading, stats) */    
+    --slightly-transparent-white-main: hsla(0, 0%, 100%, 0.75); /* (main paragraph) */    
+    --slightly-transparent-white-stats: hsla(0, 0%, 100%, 0.6); /* (stat headings) */    
 }
 
 body {
@@ -23,35 +24,69 @@ body {
     background-color: var(--very-dark-blue);
 }
 
+ /* desktop 1440px */
+@media screen(1440px) {
+    
+}
+
 
 /* container */
 
-.container {}
+.container {
+    background-color: var(--dark-desaturated-blue);
+    
+}
 
 
 /* header */
 
-.header {}
+.header {
+    color: var(--neutral-white);
+    font-family: inter;
+    font-weight: 700;
+}
 
 
 /* span insights */
 
-.insights {}
+.insights {
+    color: var(--soft-violet);
+}
 
 
 /* text */
 
-.text {}
+.text {
+    font-family: inter;
+    font-weight: 400;
+    color: var(--slightly-transparent-white-main);
+}
 
 
 /* stats */
 
-.stats {}
+.stats {
+    font-family: 'Lexend Deca';
+    font-weight: 400;
+    color: var(--neutral-white);
+}
 
 
 /* span info */
 
-.info {}
+.info {
+    color: var(--slightly-transparent-white-stats);
+    text-transform: uppercase;
+}
+
+
+
+.image {
+    background-color: var(--soft-violet);
+    background-image: url(./images/image-header-desktop.jpg);
+    
+    
+}
 
 
 /* footer */
@@ -64,3 +99,11 @@ body {
 .attribution a {
     color: hsl(228, 45%, 44%);
 }
+
+
+/* mobile 375px */
+
+@media screen(375px) {
+    
+}
+
