@@ -32,11 +32,12 @@ body {
 .container {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    
+    height: 400px;
     width: 1440px;
-    border-radius: 5px;
+    border-radius: 10px;
     background-color: var(--dark-desaturated-blue);
+    margin: 50px;
     
 }
 
@@ -44,6 +45,7 @@ body {
 /* header */
 
 .header {
+    
     
     color: var(--neutral-white);
     font-family: inter;
@@ -94,14 +96,16 @@ ul li {
 /* image */
 
 .image {   
+    align-self: flex-end;
     background-image: url(./images/image-header-desktop.jpg);
     background-color: var(--soft-violet);
     background-blend-mode: multiply;
     mix-blend-mode: softened;
     background-repeat: no-repeat;
     background-size: cover;
-    width: 400px;
+    width: 480px;
     height: 400px;
+    
     
     
     
