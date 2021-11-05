@@ -19,7 +19,7 @@
 body {
     font-size: 15px;
     box-sizing: border-box;
-    overflow: hidden;
+    
     margin: 0;
     padding: 0;
     background-color: var(--very-dark-blue);
@@ -31,22 +31,24 @@ body {
 
 .container {
     display: flex;
-    flex-direction: column;
-    
-    height: 400px;
+    justify-content: center;
+    align-items: center;
+    height: 450px;
     width: 1440px;
     border-radius: 10px;
     background-color: var(--dark-desaturated-blue);
-    margin: 50px;
-    
+    margin:50px;
 }
 
+.left {
+    height: 80%;
+    width: 35%;
+    
+}
 
 /* header */
 
 .header {
-    
-    
     color: var(--neutral-white);
     font-family: inter;
     font-weight: 700;
@@ -72,15 +74,18 @@ body {
 
 /* stats */
 
-.stats {
-    
-    
+.stats ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+.list {
+    text-align: center;
     font-family: 'Lexend Deca';
     font-weight: 400;
     color: var(--neutral-white);
+
 }
-
-
 
 ul li {    
     list-style-type: none;
@@ -95,21 +100,25 @@ ul li {
 
 /* image */
 
+.image-container {
+    display: flex;
+    
+
+}
+
 .image {   
-    align-self: flex-end;
+    
     background-image: url(./images/image-header-desktop.jpg);
     background-color: var(--soft-violet);
     background-blend-mode: multiply;
     mix-blend-mode: softened;
     background-repeat: no-repeat;
     background-size: cover;
-    width: 480px;
-    height: 400px;
-    
-    
-    
+    width: 200px;
+    height: 200px;
     
 }
+
 
 
 /* footer */
