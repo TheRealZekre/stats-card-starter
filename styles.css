@@ -18,8 +18,8 @@
 
 body {
     font-size: 15px;
-    box-sizing: border-box;
-    
+   box-sizing: border-box;
+   
     margin: 0;
     padding: 0;
     background-color: var(--very-dark-blue);
@@ -31,8 +31,7 @@ body {
 
 .container {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    
     height: 450px;
     width: 1440px;
     border-radius: 10px;
@@ -41,8 +40,8 @@ body {
 }
 
 .left {
-    height: 80%;
-    width: 35%;
+    flex-direction: column;
+    width: 50%;
     
 }
 
@@ -102,6 +101,8 @@ ul li {
 
 .image-container {
     display: flex;
+    height: 100%;
+    width: 50%;
     
 
 }
@@ -114,9 +115,9 @@ ul li {
     mix-blend-mode: softened;
     background-repeat: no-repeat;
     background-size: cover;
-    width: 200px;
-    height: 200px;
-    
+    width: 400px;
+    height: 400px;
+   
 }
 
 
