@@ -31,12 +31,14 @@ body {
 
 .container {
     display: flex;
+    justify-content: flex-end;
+    align-items: center;
     
     height: 450px;
     width: 1440px;
     border-radius: 10px;
     background-color: var(--dark-desaturated-blue);
-    margin:50px;
+    margin:50px auto;
 }
 
 .left {
@@ -100,8 +102,8 @@ ul li {
 /* image */
 
 .image-container {
-    
-    
+    margin-left: auto;
+    width: 300px; 
    
     
 
@@ -137,7 +139,7 @@ ul li {
 
 /* mobile 375px */
 
-@media screen(375px) {
+@media screen and (max-width: 375px) {
     
 }
 
